@@ -1,5 +1,8 @@
 'use strict'
 
+
+
+
 var userName = prompt('enter your name?');
 alert('Wellcome ' + userName);
 
@@ -9,6 +12,7 @@ var q3 = prompt('does yazan still student?');
 var q4 = prompt('Is yazan studying in cis department? ');
 var q5 = prompt('does yazan live in syria? ');
 
+alert(userName +' you can see results in the console ');
 
 
 q1 = q1.toLowerCase();
@@ -53,4 +57,3 @@ else {
 }
 
 
-alert('you can see results in the console ');
