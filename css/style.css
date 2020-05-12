@@ -6,13 +6,15 @@ color: #888888;
 
 
 h1{
-  padding: 50px 600px;  
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px; 
   font-weight: 800;
 font-size: x-large;
 }
 
 
-p{
-    padding: 5px;
+p{ padding-left:20px;
+    padding-bottom: 20px;
     font-size: x-large;
 }
