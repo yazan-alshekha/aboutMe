@@ -66,30 +66,53 @@ else {
 
 var age = prompt('question six: guess my age ');
 
-for (var i = 0; i < 6; i++) {
+for (var i = 0; i < 4; i++) {
     if (age == 24) { counter++; break; }
-    else if(age>24){ age = prompt('please try again because to hight '); }
-    else if(age>24){ age = prompt('please try again because to low '); }    
+    else if (age > 24) { age = prompt('please try again because to hight '); }
+    else if (age < 24) { age = prompt('please try again because to low '); }
 
 }
 
 
-var food=prompt('question seven:guess one of my favorite food  ')
+var food = prompt('question seven:guess one of my favorite food  ');
 
-var myFavoritFood=['mansaf','mlo5ea','Grilled chicken breasts']
+var myFavoritFood = ['mansaf', 'mlo5ea', 'Grilled chicken breasts'];
 
 
-
-var j=0
-for (i=0;i<6;i++){
-    while(j<=myFavoritFood.length){
-        if (food==myFavoritFood[j]){
+//food = rrr
+//food = rrr
+var bool = false;
+for (i = 0; i < 5; i++) {
+    for (var j = 0; j < myFavoritFood.length; j++) {
+        if (food == myFavoritFood[j]) {
             counter++;
-            
+            i = 6;
+            bool = true;
+            break;
         }
-        break;
+
     }
-    break;
+    if (bool == false) { food = prompt('please try again'); }
 }
+
+//i = 0 >> j = 0 >> j =1
 alert(`your score is ${counter} of 7 marks`);
 console.log(`your score is ${counter} of 7 marks`);
+
+
+
+
+
+/*   shihab code
+for (i = 0; i < 5; i++) {
+    for (var j = 0; j < myFavoritFood.length; j++) {
+        if (food == myFavoritFood[j]) {
+            counter++;
+            i = 6;
+            break;
+        }
+
+    }
+    food = prompt('please try again');
+}
+*/
